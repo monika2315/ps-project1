@@ -1,0 +1,82 @@
+* {
+  box-sizing: border-box;
+}
+.card-col {
+  margin: 0;
+  padding-left: 10px;
+  padding-right: 10px;
+  flex: 0 0 33.333%;
+  display: flex;
+  padding: 10px;
+}
+img.card-img-top {
+  background-color: lightgray;
+  max-width: 100%;
+  max-height: auto;
+}
+.card.card {
+  padding: 7px;
+  border: none;
+  box-shadow: 2px lightgray;
+  box-shadow: -1px -1px 6px lightgrey;
+  flex: 0 0 100%;
+}
+.cardTitle.card-title.h5 span {
+  color: slateblue;
+  font-size: 1.2rem;
+}
+span.textSpan {
+  font-weight: 500;
+  font-size: 0.9rem;
+}
+input[type="text"] {
+  border: none;
+  border-bottom: 1px solid black;
+  text-align: center;
+}
+input[type="text"]:active,
+input[type="text"]:focus {
+  outline: none !important;
+}
+button.buttons.btn.btn-primary {
+  margin: 5px 0;
+  background-color: lightgreen;
+  border-color: lightgreen;
+  color: black;
+}
+button.buttons.btn.btn-primary:hover {
+  background-color: forestgreen;
+  color: white;
+}
+.rows.row {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+p.cardTitle.card-text {
+  margin-bottom: 0.3rem;
+}
+span.spanValue {
+  color: slateblue;
+  font-size: 0.9rem;
+}
+.container-fluid.sidebar-container {
+  background-color: white;
+  margin: 10px 0;
+}
+.input-col.col,
+.button-col.col-6 {
+  display: flex;
+  justify-content: center;
+}
+
+/* media query for mobile */
+@media only screen and (max-width: 700px) {
+  .card-col {
+    flex: 100%;
+  }
+}
+@media only screen and (min-width: 7001px) and (max-width: 1024px) {
+  .card-col {
+    flex: 0 0 50%;
+  }
+}
